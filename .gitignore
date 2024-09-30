@@ -164,3 +164,5 @@ cython_debug/
 **/cmake-build-debug/
 **.lock
 **/target
+**/aaron_test/
+*.png

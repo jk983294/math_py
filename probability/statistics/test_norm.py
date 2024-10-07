@@ -9,6 +9,7 @@ print("normaltest teststat = %6.3f pvalue = %6.4f" % stats.normaltest(x))
 standarded_x = (x - x.mean()) / x.std()
 print("normaltest teststat = %6.3f pvalue = %6.4f" % stats.normaltest(standarded_x))
 stat2, _ = stats.jarque_bera(x)
+stats.jarque_bera(x).pvalue
 
 
 def statistic(x):

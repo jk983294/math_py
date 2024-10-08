@@ -929,10 +929,9 @@ def factor_cumulative_returns(factor_data,
     if groups is not None:
         portfolio_data = portfolio_data[portfolio_data['group'].isin(groups)]
 
-    returns = \
-        factor_returns(portfolio_data, long_short, group_neutral, equal_weight)
+    returns = factor_returns(portfolio_data, long_short, group_neutral, equal_weight)
 
-    return cumulative_returns(returns[period], period)
+    return cumulative_returns(returns[period])
 
 
 def factor_positions(factor_data,
